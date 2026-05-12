@@ -6,8 +6,8 @@
 > **Document Status:** Draft — For Review  
 > **Version:** 1.0  
 > **Date:** May 2025  
-> **Prepared by:** Office of Research & Graduate Studies  
-> **Audience:** IT Development Team · Senior Management  
+> **Prepared by:** Research Affairs  
+> **Audience:** IT Dept  
 > **Classification:** Confidential — Internal Use Only
 
 ---
