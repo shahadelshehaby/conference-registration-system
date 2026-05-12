@@ -80,10 +80,10 @@ The **Conference Registration System (CRS)** is a purpose-built, web-based platf
 | Average approval cycle time | 10–15 working days | ≤ 3 working days |
 | Manual data entry hours per application | ~45 minutes | 0 minutes |
 | Application submission errors | ~30% (missing docs) | < 5% |
-| PRF generation time | 2–3 hours | < 5 minutes (auto-fill) |
+| PRF generation time | 30 minutes | < 5 minutes (auto-fill) |
 | Management report generation | 4–8 hours manual | Real-time, self-service |
 | Faculty satisfaction score | N/A | ≥ 4.2 / 5.0 |
-| On-time post-conference compliance | ~60% (informal) | ≥ 90% |
+| On-time post-conference compliance | ~60% (manual) | ≥ 90% |
 
 ---
 
