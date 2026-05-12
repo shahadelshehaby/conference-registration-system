@@ -145,8 +145,7 @@ Faculty and staff must authenticate via UD's existing **Microsoft 365 SSO**. No 
 #### FR-AUTH-003 — Faculty Profile Auto-Population
 On first login, the system auto-populates the faculty profile from Active Directory:
 - Full Name, Employee ID, College affiliation, Academic rank, Email address.
-
-Faculty confirm and may add: specialisation, ORCID ID, and Google Scholar profile link.
+- Faculty confirm.
 
 ---
 
