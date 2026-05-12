@@ -41,7 +41,7 @@
 
 ## 1. Executive Summary
 
-The University of Dubai (UD) currently manages faculty conference attendance through a fully **manual, paper-based process**. Faculty members complete a Microsoft Word checklist (Appendix I, R 10.3), which is physically routed through up to five levels of approvers before manual data entry into Excel spreadsheets. This process is error-prone, time-consuming, and provides no real-time visibility to stakeholders.
+The University of Dubai (UD) currently manages faculty conference attendance through a fully **manual, paper-based process**. Faculty members complete a Microsoft Word checklist, which is routed through up to five levels of approvers before manual data entry into Excel spreadsheets. This process is error-prone, time-consuming, and provides no real-time visibility to the management.
 
 The **Conference Registration System (CRS)** is a purpose-built, web-based platform that will digitise, automate, and intelligently manage this end-to-end workflow — from initial faculty application through multi-tier approvals, automated Purchase Requisition Form (PRF) generation, and live executive dashboards.
 
@@ -53,22 +53,12 @@ The **Conference Registration System (CRS)** is a purpose-built, web-based platf
 
 ### 2.1 Current Workflow Pain Points
 
-- Faculty must print, hand-fill, and physically deliver a Word document through multiple offices — a process taking up to 3 weeks.
-- Administrative staff manually transcribe each submission into Excel, introducing data errors and duplication.
+- Faculty must hand-fill and deliver a Word document through multiple departments.
 - There is no automated notification system; approvers are unaware of pending requests without manual follow-up.
 - No central visibility: senior management cannot see live status of applications, budget consumption, or approval bottlenecks.
 - Post-conference compliance (returning proceedings, library copies) is tracked informally with no reminder system.
 - PRF documents must be separately prepared and manually routed through a second approval chain, duplicating effort.
 - Historic data is locked in disconnected Excel files, making trend analysis and reporting manual and inconsistent.
-- The current system does not support remote or mobile access, limiting faculty flexibility.
-
-### 2.2 Existing Document Inventory
-
-| Document | Description / Current Use |
-|---|---|
-| **Appendix I (R 10.3)** | Six-stage conference attendance checklist covering eligibility verification, document submission, multi-level approvals (Research Committee → Dean → CAO/Provost → President), and post-conference obligations. |
-| **Conference_Approvals.xlsx** | Manual tracking sheet with columns: Faculty Name, College, Conference Name, Location, Dates, Paper Title, Status, Approval Chain. Sheet 2 contains ad-hoc pivot charts for college-wise and status distributions. |
-| **Purchase Requisition Form** | General-purpose PRF used for all purchase types (equipment, conference, visiting faculty, other). Contains requester details, item lines, and a multi-box approval grid (Line Manager → CAO → IT → Library → Marketing → Procurement → Finance → President). |
 
 ---
 
