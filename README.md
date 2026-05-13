@@ -333,7 +333,6 @@ Once a conference attendance date has passed, the system automatically activates
 ### 7.2 Automated Reminders
 - System sends email reminders at **D+3** and **D+7** for each incomplete obligation.
 - If all obligations are not completed within **15 working days**, the Dean receives an automated alert.
-- Non-compliance flag is visible on the faculty member's profile and may affect eligibility for future applications (configurable by Admin).
 
 ---
 
