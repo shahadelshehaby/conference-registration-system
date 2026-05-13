@@ -320,7 +320,7 @@ Faculty or Finance may attach vendor quotations directly to the PRF record. The 
 
 ### 7.1 Obligations Tracking
 
-Mirroring Stage VI of the existing Appendix I checklist, once a conference attendance date has passed, the system automatically activates a **post-conference task list** for the faculty member:
+Once a conference attendance date has passed, the system automatically activates a **post-conference task list** for the faculty member:
 
 | Obligation | Deadline | Evidence Required |
 |---|---|---|
