@@ -250,7 +250,6 @@ Upon conference approval (President's signature), the system immediately creates
 | Item 2: Flights | Section F — Estimated flights (AED) |
 | Item 3: Accommodation | Section F — Estimated accommodation (total) |
 | Item 4: Per Diems | Section F — Estimated per diems |
-| Recommended Supplier | Conference organiser name and website URL |
 | Total Cost | Auto-calculated sum of all items |
 
 #### FR-PRF-003 — Faculty Review of PRF
