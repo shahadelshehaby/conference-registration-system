@@ -153,13 +153,13 @@ On first login, the system auto-populates the faculty profile from Active Direct
 
 #### FR-APP-001 — Form Sections
 
-The digital application form captures all fields from the existing Appendix I checklist, structured into logical sections:
+The digital application form captures all fields structured into logical sections:
 
 | # | Section | Fields |
 |---|---|---|
 | **A** | Applicant Information | Full name (auto), Employee ID (auto), College (auto), Academic rank (auto), Contact email (auto), Submission date (auto). |
-| **B** | Conference Details | Conference full name, Acronym, Website URL, Location (city & country), Start date, End date, Conference type (international/national), Organising body. |
-| **C** | Paper / Presentation Details | Paper title, Co-authors (with affiliation), Presentation type (oral/poster/keynote), SCOPUS indexing status, Link to proceedings listing. |
+| **B** | Conference Details | Conference full name, Acronym, Website URL, Location (city & country), Start date, End date, Conference type (international/national) |
+| **C** | Paper / Presentation Details | Paper title |
 | **D** | Eligibility Checklist | Probationary period completed (Yes/No), First conference this academic year (Yes/No), "University of Dubai" appears in paper (Yes/No), Conference is peer-reviewed & SCOPUS-indexed (Yes/No). **All four must be Yes to proceed.** |
 | **E** | Document Uploads | Acceptance letter/email (PDF, required), Conference paper draft (PDF, required), Conference registration form (PDF, required), Conference agenda (PDF, optional), Proof of entry visa (if applicable). |
 | **F** | Financial Estimate | Registration fee (AED), Flights (AED), Accommodation per night (AED), Number of nights, Per diems (AED), **Total (auto-calculated)**, Advance required (Yes/No), Substitution required (Yes/No). |
