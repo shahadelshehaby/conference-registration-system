@@ -116,7 +116,7 @@ The **Conference Registration System (CRS)** is a purpose-built, web-based platf
 | **Backend** | Node.js / Express.js REST API, or Django (Python) — to be confirmed with IT team. |
 | **Database** | PostgreSQL — relational model for structured approval chains, audit logs, and form data. |
 | **Authentication** | OAuth 2.0 / SAML 2.0 integration with existing UD Active Directory / Microsoft 365 SSO. MFA enforced for all approver roles. |
-| **File Storage** | Azure Blob Storage (or on-premise equivalent) for uploaded documents. Version-controlled with access logs. |
+| **File Storage** | Supabase (or Azure Blob Storage) for uploaded documents. Version-controlled with access logs. |
 | **Email Service** | Microsoft Exchange integration or SendGrid for automated notification emails with deep-link tokens. |
 | **Digital Signature** | DocuSign API integration (or Adobe Sign) for binding electronic signatures on approval records. |
 | **Hosting** | Azure Government / on-premise UD data centre per institutional policy. TLS 1.3 in transit, AES-256 at rest. |
