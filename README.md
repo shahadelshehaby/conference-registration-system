@@ -301,7 +301,7 @@ Faculty or Procurement may attach vendor quotations directly to the PRF record. 
   - Budget committed vs. spent (gauge)
 - College comparison table: side-by-side view of all three colleges.
 - Research output tracker: papers presented, by faculty, by conference, by SCOPUS status.
-- Configurable date range filter (current academic year default).
+- Configurable date range filter (academic year or calender year options).
 - **One-click export**: formatted PDF executive summary report.
 
 #### FR-DASH-004 — Finance Dashboard
