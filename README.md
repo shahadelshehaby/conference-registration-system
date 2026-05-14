@@ -213,7 +213,7 @@ The approval workflow follows a strict **sequential chain**. Each stage must be 
 
 #### FR-WF-003 — SLA Monitoring & Escalation
 - At **50% of SLA elapsed**: reminder email sent to approver.
-- At **100% of SLA elapsed**: escalation email sent to approver's direct superior. Dashboard flags application as **"Overdue"** in red.
+- At **100% of SLA elapsed**: second reminder email sent to approver, dashboard flags application as **"Urgent"** in red.
 
 #### FR-WF-004 — Comments & Audit Trail
 Every action is recorded with: actor identity, timestamp, IP address, action type, and full comment text. This log is **immutable** and available to System Administrators and UD President.
@@ -268,7 +268,7 @@ The faculty member receives a notification and is directed to **review the pre-f
 | **6** | Procurement Department | N/A — notified | Receive approved PRF. Execute vendor engagement. Update purchase status in CRS. |
 
 #### FR-PRF-005 — Quotation Attachment
-Faculty or Finance may attach vendor quotations directly to the PRF record. The system tracks whether a quotation is attached and **requires quotation for any single item exceeding AED 5,000**.
+Faculty or Procurement may attach vendor quotations directly to the PRF record. The system tracks whether a quotation is attached and **requires quotation for any single item exceeding AED 5,000**.
 
 ---
 
