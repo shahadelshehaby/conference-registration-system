@@ -266,6 +266,8 @@ The faculty member receives a notification and is directed to **review the pre-f
 | **4** | Finance Department | 2 working days | Budget availability check; may partially approve or adjust amounts. |
 | **5** | UD President | 1 working day | Final binding approval with digital signature. |
 | **6** | Procurement Department | N/A — notified | Receive approved PRF. Execute vendor engagement. Update purchase status in CRS. |
+| **7** | Faculty Member Review & Confirmation | 1 working day | Faculty member receives automated notification with procurement updates and finalized booking/purchase details. Faculty member may: Accept, Request modifications, or Add comments/clarifications before final procurement closure. |
+
 
 #### FR-PRF-005 — Quotation Attachment
 Faculty or Procurement may attach vendor quotations directly to the PRF record. The system tracks whether a quotation is attached and **requires quotation for any single item exceeding AED 5,000**.
