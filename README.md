@@ -1,10 +1,10 @@
 # 🎓 University of Dubai — Conference Registration System (CRS)
-## Product Requirements Document · v1.0
+## Product Requirements Document · v2.0
 
 ---
 
 > **Document Status:** Draft — For Review  
-> **Version:** 1.0  
+> **Version:** 2.0  
 > **Date:** May 2025  
 > **Prepared by:** Research Affairs  
 > **Audience:** IT Dept  
@@ -681,7 +681,7 @@ This document requires review and formal approval from the following stakeholder
 
 <div align="center">
 
-**University of Dubai · Conference Registration System · PRD v1.0**
+**University of Dubai · Conference Registration System · PRD v2.0**
 
 *Confidential — Internal Use Only*
 
