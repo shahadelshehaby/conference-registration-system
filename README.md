@@ -194,8 +194,9 @@ The approval workflow follows a strict **sequential chain**. Each stage must be 
 
 | Stage | Approver | SLA Target | Actions Available |
 |---|---|---|---|
-| **RC** | Research Committee (College-level) | 2 working days | Approve to Dean, Add pending issues, Request info from faculty. |
-| **1** | Dean of College (CEIT / Business / Law) | 2 working days | Approve, Reject, Return to faculty with comments, Escalate. |
+| **1** | Dean of College (CEIT / Business / Law) | 2 working days | Approve, Reject, Return to faculty with comments, Request additional information, Delegate to College Research Committee for advisory review. |
+| **1A (Optional Advisory Stage)** | Research Committee (College-level Advisory Review) | 2 working days | Provide advisory feedback, Add recommendations, Highlight pending issues, Request clarifications through Dean. No direct approval/rejection authority. Request returns to Dean after review. |
+| **1B (Post-Advisory Review)** | Dean of College (CEIT / Business / Law) | 2 working days | Review Research Committee feedback and proceed with: Approve, Reject, Return to faculty with comments, Escalate to Director of Research. |
 | **2** | Director of Research | 2 working days | Approve, Reject, Return with comments, Request additional documents. |
 | **3** | VP of Academic Affairs | 1 working day | Approve, Reject, Return with comments. |
 | **4** | UD President | 1 working day | **Final Approve, Final Reject.** Digital signature captured. |
