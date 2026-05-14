@@ -161,7 +161,7 @@ The digital application form captures all fields structured into logical section
 | **B** | Conference Details | Conference full name, Acronym, Website URL, Location (city & country), Start date, End date, Conference type (international/national) |
 | **C** | Paper / Presentation Details | Paper title |
 | **D** | Eligibility Checklist | Probationary period completed (Yes/No), First conference this academic year (Yes/No), "University of Dubai" appears in paper (Yes/No), Conference is peer-reviewed & SCOPUS-indexed (Yes/No). **All four must be Yes to proceed.** |
-| **E** | Document Uploads | Acceptance letter/email (PDF, required), Conference paper draft (PDF, required), Conference registration form (PDF, required), Conference agenda (PDF, optional), Proof of entry visa (if applicable). |
+| **E** | Document Uploads | Acceptance letter/email (PDF, required), Conference paper draft (PDF, required), Conference registration form (PDF, optional), Conference agenda (PDF, optional), Proof of entry visa (if applicable). |
 | **F** | Financial Estimate | Registration fee (AED), Flights (AED), Accommodation per night (AED), Number of nights, Per diems (AED), **Total (auto-calculated)**, Advance required (Yes/No), Substitution required (Yes/No). |
 | **G** | Substitution & Leave | Substitution plan (text), Conference leave dates (date range), Substituting faculty member name. |
 
