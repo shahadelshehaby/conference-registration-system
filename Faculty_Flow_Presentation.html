@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Member Flow - Conference Registration System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1b3a6b 0%, #2d5a8c 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 4px solid #c8972a;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+            overflow-x: auto;
+        }
+        svg {
+            display: block;
+            margin: 0 auto;
+            background: white;
+        }
+        .footer {
+            background: #f5f7fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            border-top: 1px solid #e0e5eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Faculty Member Complete Flow</h1>
+            <p>Conference Registration System · University of Dubai</p>
+        </div>
+
+        <div class="content">
+            <svg width="100%" viewBox="0 0 680 2200" role="img" xmlns="http://www.w3.org/2000/svg">
+                <title>Faculty Member Complete Flow in Conference Registration System</title>
+                <defs>
+                    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                        <path d="M2 1L8 5L2 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </marker>
+                    <!-- Color definitions -->
+                    <style>
+                        .c-blue rect, .c-blue circle { fill: #e6f1fb; stroke: #185fa5; }
+                        .c-blue text { fill: #0c447c; }
+                        .c-green rect, .c-green circle { fill: #eaf3de; stroke: #3b6d11; }
+                        .c-green text { fill: #173404; }
+                        .c-purple rect, .c-purple circle { fill: #eeedfe; stroke: #534ab7; }
+                        .c-purple text { fill: #26215c; }
+                        .c-teal rect, .c-teal circle { fill: #e1f5ee; stroke: #0f6e56; }
+                        .c-teal text { fill: #04342c; }
+                        .c-coral rect, .c-coral circle { fill: #faece7; stroke: #993c1d; }
+                        .c-coral text { fill: #4a1b0c; }
+                        .c-amber rect, .c-amber circle { fill: #faeeda; stroke: #854f0b; }
+                        .c-amber text { fill: #412402; }
+                        .c-gray rect, .c-gray circle { fill: #f1efe8; stroke: #5f5e5a; }
+                        .c-gray text { fill: #2c2c2a; }
+                        .c-red polygon { fill: #fcebeb; stroke: #a32d2d; }
+                        .c-red text { fill: #501313; }
+                    </style>
+                </defs>
+
+                <!-- Phase headers -->
+                <rect x="0" y="0" width="680" height="35" fill="#ffffff" stroke="#d1d9e6" stroke-width="0.5"/>
+                <text x="20" y="22" font-family="inherit" font-weight="500" font-size="14" fill="#1b3a6b">Faculty Member Complete Flow · Conference Registration System</text>
+
+                <!-- SECTION 1: AUTHENTICATION & PROFILE SETUP -->
+                <text x="20" y="80" font-family="inherit" font-weight="500" font-size="14" fill="#1b3a6b">1. Authentication & Profile Setup</text>
+                
+                <g class="c-blue">
+                    <rect x="220" y="100" width="240" height="44" rx="8" stroke-width="0.5"/>
+                    <text x="340" y="122" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Faculty logs in via SSO</text>
+                </g>
+                
+                <line x1="340" y1="144" x2="340" y2="180" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-green">
+                    <rect x="180" y="180" width="320" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="340" y="198" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Profile Auto-Populated</text>
+                    <text x="340" y="220" text-anchor="middle" font-size="12" dominant-baseline="central">Name, ID, College, Email from AD</text>
+                </g>
+
+                <!-- SECTION 2: CREATE APPLICATION -->
+                <text x="20" y="290" font-family="inherit" font-weight="500" font-size="14" fill="#1b3a6b">2. Application Creation & Form Completion</text>
+                
+                <line x1="340" y1="236" x2="340" y2="270" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-purple">
+                    <rect x="140" y="270" width="400" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="340" y="288" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Fill Conference Application Form</text>
+                    <text x="340" y="310" text-anchor="middle" font-size="12" dominant-baseline="central">7 sections: Applicant Info, Conference Details, Paper, Eligibility, Documents, Financial, Substitution</text>
+                </g>
+                
+                <line x1="340" y1="326" x2="340" y2="360" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-gray">
+                    <rect x="160" y="360" width="360" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="340" y="378" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Smart Validation Performed</text>
+                    <text x="340" y="400" text-anchor="middle" font-size="12" dominant-baseline="central">Eligibility check, document verification, cost calculation</text>
+                </g>
+                
+                <line x1="340" y1="416" x2="340" y2="450" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <!-- Decision: Valid? -->
+                <g class="c-red">
+                    <polygon points="340,450 420,490 340,530 260,490" stroke-width="0.5"/>
+                    <text x="340" y="495" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">All Valid?</text>
+                </g>
+                
+                <!-- NO path -->
+                <line x1="260" y1="490" x2="120" y2="490" stroke="#a32d2d" stroke-width="1.5" marker-end="url(#arrow)"/>
+                <text x="160" y="480" text-anchor="middle" font-size="12" fill="#a32d2d">No</text>
+                <g class="c-red">
+                    <rect x="20" y="460" width="160" height="56" rx="8" stroke-width="1.5"/>
+                    <text x="100" y="478" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Fix Errors</text>
+                    <text x="100" y="500" text-anchor="middle" font-size="12" dominant-baseline="central">Update and revalidate</text>
+                </g>
+                <line x1="100" y1="460" x2="100" y2="380" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <!-- YES path -->
+                <line x1="340" y1="530" x2="340" y2="570" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                <text x="360" y="555" font-size="12" fill="#1b3a6b">Yes</text>
+                
+                <g class="c-green">
+                    <rect x="200" y="570" width="280" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="340" y="588" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Submit Application</text>
+                    <text x="340" y="610" text-anchor="middle" font-size="12" dominant-baseline="central">Reference # generated (CRS-YYYY-CODE-XXXX)</text>
+                </g>
+
+                <!-- SECTION 3: APPLICATION APPROVAL WORKFLOW -->
+                <text x="20" y="680" font-family="inherit" font-weight="500" font-size="14" fill="#1b3a6b">3. Application Approval Workflow</text>
+                
+                <line x1="340" y1="626" x2="340" y2="660" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-blue">
+                    <rect x="120" y="660" width="220" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="678" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Stage 1: Dean Review</text>
+                    <text x="230" y="700" text-anchor="middle" font-size="12" dominant-baseline="central">SLA: 2 working days</text>
+                </g>
+                
+                <!-- Decision diamond: Dean action -->
+                <g class="c-gray">
+                    <polygon points="500,688 570,720 500,752 430,720" stroke-width="0.5"/>
+                    <text x="500" y="720" text-anchor="middle" font-weight="500" font-size="12" dominant-baseline="central">Dean</text>
+                    <text x="500" y="738" text-anchor="middle" font-size="11" dominant-baseline="central">Decision?</text>
+                </g>
+                
+                <line x1="340" y1="688" x2="430" y2="720" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <!-- Reject path -->
+                <line x1="570" y1="720" x2="600" y2="720" stroke="#a32d2d" stroke-width="1.5" marker-end="url(#arrow)"/>
+                <g class="c-red">
+                    <rect x="600" y="692" width="60" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="630" y="720" text-anchor="middle" font-weight="500" font-size="12" dominant-baseline="central">Rejected</text>
+                </g>
+                
+                <!-- Optional Research Committee (RC) path -->
+                <line x1="500" y1="752" x2="500" y2="810" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                <text x="480" y="790" text-anchor="middle" font-size="11" fill="#5f5e5a">Delegate to RC</text>
+                
+                <g class="c-teal">
+                    <rect x="380" y="810" width="240" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="500" y="828" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Stage 1A: RC Advisory Review</text>
+                    <text x="500" y="850" text-anchor="middle" font-size="12" dominant-baseline="central">Comments only, returns to Dean</text>
+                </g>
+                
+                <line x1="500" y1="866" x2="500" y2="900" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-blue">
+                    <rect x="360" y="900" width="280" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="500" y="918" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Stage 1B: Dean Review (Post-RC)</text>
+                    <text x="500" y="940" text-anchor="middle" font-size="12" dominant-baseline="central">Reviews RC feedback, makes final decision</text>
+                </g>
+                
+                <line x1="500" y1="956" x2="500" y2="990" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <!-- Approved from Stage 1 -->
+                <line x1="430" y1="720" x2="340" y2="750" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                <text x="360" y="735" text-anchor="middle" font-size="12" fill="#3b6d11">Approved</text>
+                
+                <g class="c-purple">
+                    <rect x="120" y="990" width="220" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1008" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Stage 2: Director Review</text>
+                    <text x="230" y="1030" text-anchor="middle" font-size="12" dominant-baseline="central">SLA: 2 working days</text>
+                </g>
+                
+                <line x1="500" y1="990" x2="340" y2="1018" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <!-- More stages -->
+                <line x1="230" y1="1046" x2="230" y2="1080" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-coral">
+                    <rect x="120" y="1080" width="220" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1098" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Stage 3: VP Academic Affairs</text>
+                    <text x="230" y="1120" text-anchor="middle" font-size="12" dominant-baseline="central">SLA: 1 working day</text>
+                </g>
+                
+                <line x1="230" y1="1136" x2="230" y2="1170" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-blue">
+                    <rect x="120" y="1170" width="220" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1188" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Stage 4: President Approval</text>
+                    <text x="230" y="1210" text-anchor="middle" font-size="12" dominant-baseline="central">Final approval with digital signature</text>
+                </g>
+
+                <!-- SECTION 4: PRF MANAGEMENT -->
+                <text x="20" y="1290" font-family="inherit" font-weight="500" font-size="14" fill="#1b3a6b">4. PRF Auto-Generation & Review</text>
+                
+                <line x1="230" y1="1226" x2="230" y2="1260" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-green">
+                    <rect x="80" y="1260" width="300" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1278" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">PRF Auto-Generated</text>
+                    <text x="230" y="1300" text-anchor="middle" font-size="12" dominant-baseline="central">Pre-filled from approved application data</text>
+                </g>
+                
+                <line x1="230" y1="1316" x2="230" y2="1350" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-purple">
+                    <rect x="60" y="1350" width="340" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1368" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Faculty Reviews PRF</text>
+                    <text x="230" y="1390" text-anchor="middle" font-size="12" dominant-baseline="central">Can edit costs with explanation, add quotations</text>
+                </g>
+                
+                <line x1="230" y1="1406" x2="230" y2="1440" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-green">
+                    <rect x="100" y="1440" width="260" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1458" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Faculty Submits PRF</text>
+                    <text x="230" y="1480" text-anchor="middle" font-size="12" dominant-baseline="central">Enters PRF approval chain</text>
+                </g>
+                
+                <line x1="230" y1="1496" x2="230" y2="1530" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-teal">
+                    <rect x="20" y="1530" width="420" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1548" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">PRF Approval Chain (6 stages)</text>
+                    <text x="230" y="1570" text-anchor="middle" font-size="12" dominant-baseline="central">Dean → Director → VP → Finance → President → Procurement</text>
+                </g>
+                
+                <line x1="230" y1="1586" x2="230" y2="1620" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-amber">
+                    <rect x="60" y="1620" width="340" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1638" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Faculty Notified of Procurement Updates</text>
+                    <text x="230" y="1660" text-anchor="middle" font-size="12" dominant-baseline="central">Can accept, request mods, or add comments</text>
+                </g>
+
+                <!-- SECTION 5: POST-CONFERENCE COMPLIANCE -->
+                <text x="20" y="1770" font-family="inherit" font-weight="500" font-size="14" fill="#1b3a6b">5. Post-Conference Compliance & Obligations</text>
+                
+                <line x1="230" y1="1676" x2="230" y2="1710" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-red">
+                    <rect x="20" y="1710" width="420" height="70" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1728" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Post-Conference Checklist Activated</text>
+                    <text x="230" y="1750" text-anchor="middle" font-size="12" dominant-baseline="central">Due within 10-15 working days of return</text>
+                    <text x="230" y="1770" text-anchor="middle" font-size="12" dominant-baseline="central">5 obligations: schedule, proceedings, receipts, report, confirmation</text>
+                </g>
+                
+                <line x1="230" y1="1780" x2="230" y2="1820" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-purple">
+                    <rect x="60" y="1820" width="340" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1838" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Automated Reminders</text>
+                    <text x="230" y="1860" text-anchor="middle" font-size="12" dominant-baseline="central">D+3 and D+7 for each incomplete obligation</text>
+                </g>
+                
+                <line x1="230" y1="1876" x2="230" y2="1910" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <g class="c-blue">
+                    <rect x="60" y="1910" width="340" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="1928" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Submit Compliance Documents</text>
+                    <text x="230" y="1950" text-anchor="middle" font-size="12" dominant-baseline="central">Conference schedule, proceedings, receipts, report</text>
+                </g>
+                
+                <line x1="230" y1="1966" x2="230" y2="2000" stroke="#5f5e5a" stroke-width="1.5" marker-end="url(#arrow)"/>
+                
+                <!-- Final state -->
+                <g class="c-green">
+                    <rect x="120" y="2000" width="220" height="56" rx="8" stroke-width="0.5"/>
+                    <text x="230" y="2018" text-anchor="middle" font-weight="500" font-size="14" dominant-baseline="central">Compliance Complete</text>
+                    <text x="230" y="2040" text-anchor="middle" font-size="12" dominant-baseline="central">Dean and Finance notified</text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="footer">
+            <p><strong>University of Dubai · Conference Registration System</strong></p>
+            <p>Expected Timeline: 7–10 working days (Approval) + 8–10 working days (PRF) + 15 working days (Compliance) = ~25 working days total</p>
+        </div>
+    </div>
+</body>
+</html>
