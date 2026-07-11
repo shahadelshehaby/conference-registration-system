@@ -56,7 +56,7 @@ The **Conference Registration System (CRS)** is a purpose-built, web-based platf
 - Faculty must hand-fill and deliver a Word document through multiple departments.
 - There is no automated notification system; approvers are unaware of pending requests without manual follow-up.
 - No central visibility: senior management cannot see live status of applications, budget consumption, or approval bottlenecks.
-- Post-conference compliance (returning proceedings, library copies) is tracked informally with no reminder system.
+- Post-conference compliance (LinkedIn visibility post) is tracked informally with no reminder system.
 - PRF documents must be separately prepared and manually routed through a second approval chain, duplicating effort.
 - Historic data is locked in disconnected Excel files, making trend analysis and reporting manual and inconsistent.
 
@@ -71,7 +71,7 @@ The **Conference Registration System (CRS)** is a purpose-built, web-based platf
 3. Auto-populate the PRF from approved conference application data, eliminating duplicate entry.
 4. Provide a real-time executive dashboard accessible to Dean, Director of Research, VP Academic Affairs, and UD President.
 5. Maintain a searchable, auditable historical record of all applications and their outcomes.
-6. Support post-conference compliance tracking and reminders.
+6. Support post-conference LinkedIn compliance tracking, reminders, and university brand visibility measurement.
 
 ### 3.2 Success Metrics (KPIs)
 
@@ -83,7 +83,8 @@ The **Conference Registration System (CRS)** is a purpose-built, web-based platf
 | PRF generation time | 30 minutes | < 5 minutes (auto-fill) |
 | Management report generation | 4–8 hours manual | Real-time, self-service |
 | Faculty satisfaction score | N/A | ≥ 4.2 / 5.0 |
-| On-time post-conference compliance | ~60% (manual) | ≥ 90% |
+| On-time LinkedIn post compliance | ~0% (not tracked) | ≥ 85% |
+| UD LinkedIn post reach (total impressions via faculty posts) | N/A | Tracked & reported |
 
 ---
 
@@ -93,7 +94,7 @@ The **Conference Registration System (CRS)** is a purpose-built, web-based platf
 
 | Role | Access Level | Primary Responsibilities in CRS |
 |---|---|---|
-| **Faculty Member** | Applicant | Submit conference application, upload documents, track own requests, view PRF, complete post-conference checklist. |
+| **Faculty Member** | Applicant | Submit conference application, upload documents, track own requests, view PRF, complete post-conference LinkedIn compliance task. |
 | **College Dean** (Engineering & IT / Business / Law) | Approver — Level 1 | Review applications from own college, approve/reject/comment, view college-level dashboard. |
 | **Director of Research** | Approver — Level 2 | Review all applications post-Dean, manage research committee stage, flag SCOPUS compliance. |
 | **VP of Academic Affairs** | Approver — Level 3 | Final academic sign-off before President, view cross-college analytics. |
@@ -321,22 +322,42 @@ Faculty or Procurement may attach vendor quotations directly to the PRF record. 
 
 ## 7. Post-Conference Compliance Module
 
-### 7.1 Obligations Tracking
+### 7.1 LinkedIn Visibility Task
 
-Once a conference attendance date has passed, the system automatically activates a **post-conference task list** for the faculty member:
+Once a conference attendance date has passed, the system automatically activates a **single post-conference compliance task** for the faculty member: publishing a LinkedIn post about their conference experience, mentioning and tagging the University of Dubai's official LinkedIn account with the required hashtag.
 
-| Obligation | Deadline | Evidence Required |
-|---|---|---|
-| Submit conference schedule showing faculty name and paper details to College Dean | 5 working days after return | Upload PDF / image |
-| Submit copy of paper as published in conference proceedings to Library | 10 working days after return | Upload PDF |
-| Provide copy of proceedings to College RC and UD-RC | 10 working days after return | Confirm in system (upload optional) |
-| Submit actual expense receipts to Finance for settlement | 5 working days after return | Upload scanned receipts (if advance was issued) |
-| Complete conference feedback/report form | 10 working days after return | Free-text field + optional upload |
+#### Task Requirements
 
-### 7.2 Automated Reminders
-- System sends email reminders at **D+3** and **D+7** for each incomplete obligation.
-- If all obligations are not completed within **15 working days**, the Dean receives an automated alert.
+| Field | Requirement |
+|---|---|
+| **Task** | Publish a LinkedIn post about your conference attendance |
+| **Deadline** | Within 7 days of the conference end date |
+| **Required mention** | Tag `@University of Dubai` (official LinkedIn page) |
+| **Required hashtag** | `#UDResearch` |
+| **Evidence** | Paste the public URL of the LinkedIn post into the system |
+| **Minimum content** | Post must reference the conference name and that the faculty member attended/presented on behalf of UD |
 
+#### Suggested Post Template (shown to faculty in the system)
+> *"Excited to have attended/presented at [Conference Name] in [City, Country] on behalf of @University of Dubai! A great opportunity to share research on [Paper Topic] and connect with leading academics in the field. Proud to represent UD's growing research community. #UDResearch #UniversityOfDubai #Research"*
+
+#### Incentive & Engagement Features
+- **LinkedIn Post Leaderboard** — a light gamification element visible on the faculty dashboard showing the top posts by engagement (likes + comments + shares) among UD faculty for the current academic year, encouraging quality posting.
+- **Dean's Pick Badge** — Dean can mark one post per semester as "Dean's Pick", which is highlighted in the leaderboard and shared on the official UD social media channels.
+- **Engagement Score** — the system records the number of likes, comments, and shares on each submitted post URL (via LinkedIn public data or manual entry) and feeds this into the Research Impact dashboard for management visibility.
+- **Automatic Reminder Emails** — sent at D+3 and D+5 if the task is not yet completed, with the suggested template pre-filled in the email body.
+- **Completion Acknowledgement** — upon submitting the LinkedIn post URL, the faculty member receives an in-system congratulations message and a digital "UD Research Ambassador" badge displayed on their profile within CRS.
+
+### 7.2 Compliance Tracking & Reporting
+
+- **Status tracking:** Each application record shows the LinkedIn task as `Pending` / `Submitted — Under Review` / `Verified` / `Overdue`.
+- **Verification:** The system stores the submitted LinkedIn post URL. Admins or the Director of Research can click to view the live post and manually mark it as `Verified`.
+- **Overdue escalation:** If the task is not completed within **7 days** of the conference end date, an automated alert is sent to the faculty member's Dean.
+- **Non-compliance flag:** A non-compliance flag is recorded on the faculty member's CRS profile. This is visible to the Director of Research and may be considered during future conference application reviews (configurable by Admin).
+- **Dashboard visibility:** The Executive Dashboard and Director of Research dashboard display:
+  - Total LinkedIn posts submitted this academic year
+  - Compliance rate (% of approved conferences that resulted in a verified post)
+  - Total estimated reach (sum of engagement scores across all posts)
+  - Leaderboard of top posts by engagement
 ---
 
 ## 8. Non-Functional Requirements
@@ -505,7 +526,7 @@ conference-registration-system/
 | **Phase 1** — Foundation | SSO integration, user management, database setup, application form (Sections A–D), file upload, draft save, reference number generation. | 6 weeks | Working authentication, form submission to database, file storage. |
 | **Phase 2** — Workflow Engine | Conference approval chain (all 5 stages), notification system, SLA monitoring, escalation logic, approver dashboard, faculty status view. | 6 weeks | End-to-end conference approval flow in staging environment. |
 | **Phase 3** — PRF Module | PRF auto-population, PRF approval chain (6 stages), Finance dashboard, Procurement notification, quotation attachment. | 5 weeks | Working PRF workflow. Finance and Procurement access. |
-| **Phase 4** — Dashboards & Analytics | Executive dashboard, college dashboards, charts, export (PDF/Excel), post-conference compliance module. | 4 weeks | Full dashboards. Post-conference checklists and reminders. |
+| **Phase 4** — Dashboards & Analytics | Executive dashboard, college dashboards, charts, export (PDF/Excel), post-conference LinkedIn compliance module, leaderboard, engagement tracking. | 4 weeks | Full dashboards. LinkedIn compliance task, leaderboard, and Dean's Pick feature live. |
 | **Phase 5** — UAT & Launch | User Acceptance Testing, bug fixes, performance tuning, penetration test, Arabic localisation, go-live. | 4 weeks | Production-ready system. User training completed. |
 | **Phase 6** — Post-Launch | Monitoring, feedback, Scopus API integration, ERP integration planning. | Ongoing | v1.1 enhancement releases. Integration roadmap. |
 
@@ -556,7 +577,7 @@ conference-registration-system/
 7. PRF review and confirm (pre-filled editable form with change log)
 8. PRF status tracker
 9. Executive dashboard (charts, counters, college comparison)
-10. Post-conference compliance checklist
+10. Post-conference LinkedIn compliance task & leaderboard
 11. System Admin panel (users, configuration, audit log)
 
 ---
